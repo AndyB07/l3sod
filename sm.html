@@ -5,90 +5,170 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SMART LIGHT</title>
   <style>
-   @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
-
-*{ box-sizing:border-box; margin:0; padding:0; }
-body{ font-family:Arial, sans-serif; line-height:1.6; background:#f4f4f4; color:#333; }
-a{ text-decoration:none; color:inherit; }
-
-
-.header{ background:#fff; }
-.nav{
-  display:flex; flex-wrap:wrap; align-items:center;
-  justify-content:space-between; gap:1rem;
-  max-width:1100px; margin:auto; padding:0.75rem 1rem;
-}
-.logo{ font-weight:bold; }
-.nav a{ margin-left:0.75rem; font-weight:bold; }
-.nav .btn{ background:#1C08F5; color:#fff; padding:0.5rem 1rem; border-radius:5px; }
-
-.hero-banner{
-  background:#007BFF; color:#fff; text-align:center;
-  display:flex; flex-direction:column; align-items:center; justify-content:center;
-  padding:2.5rem 1rem; max-width:100%;
-}
-.hero-banner button{
-  background:#fff; color:#007BFF; border:none; border-radius:5px;
-  padding:0.5rem 1.25rem; margin-top:1rem; cursor:pointer;
-}
-
-
-.features, .how-it-works, .testimonials{
-  padding:2.5rem 1rem; text-align:center;
-}
-.features{ background:#e4e1e1; }
-.how-it-works{ background:#999595; }
-.testimonials{ background:#e4e1e1; }
-
-
-.cards, .steps, .quotes{
-  display:flex; flex-wrap:wrap; gap:1.25rem; margin-top:1.25rem; justify-content:center;
-}
-.card, .step, blockquote{
-  flex:1 1 280px; background:#f9f9f9; padding:1.25rem; border-radius:10px;
-  box-shadow:0 2px 5px rgba(0,0,0,0.1);
-}
-
-
-footer{ background:#0a0441; color:#ccc; padding:2.5rem 1rem; }
-.footer-links{ display:flex; flex-wrap:wrap; gap:2rem; max-width:1100px; margin:auto; }
-.footer-links h4{ margin-bottom:0.75rem; color:#fff; }
-.footer-links ul{ list-style:none; }
-.footer-links li a{ margin-bottom:0.5rem; display:block; }
-.social-icons a{ font-size:1.25rem; margin-right:0.5rem; }
-footer p{ text-align:center; margin-top:1.25rem; font-size:0.875rem; }
-
-
-h1{ font-size:clamp(1.8rem,4vw,3rem); margin-bottom:0.5rem; }
-h2{ font-size:clamp(1.4rem,3vw,2.25rem); margin-bottom:0.75rem; }
-p , .tagline{ font-size:1rem; }
-
-
-@media (min-width:600px){
-  .card, .step, blockquote{ flex:1 1 45%; }
-}
-@media (min-width:992px){
-  .card, .step, blockquote{ flex:1 1 30%; }
-  .nav a{ margin-left:1.25rem; }
-}
-.m{
-    color: #136cf1;
-  }
-  .p{
+    @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+    .fa-brands{
+      color: #f4f4f4;
+      font-size:xx-large;
+      margin-left: 5px;
+    }
+    .p{
     background-color: #007BFF; 
+    width: 84.4rem;  
+    height: 15rem; 
     color: white;
+    padding-top: 10px;
     font-size: 24px;
-  }
-  .p2{
+    }
+    .p2{
         font-size: 11px;
     }
     button{
       background-color: white;
+      margin-top: 10px;
       color: #007BFF;
-      border-radius: 5px;
       border: none;
+      border-radius: 5px;
     }
-
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  .header {
+    background: #ffffff;
+    color: #3f3e3e;
+    padding: 5px 5px;
+    text-align: center;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px 0;
+  }
+  
+  .nav a {
+    color: #313131;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav .btn {
+    background: #1C08F5;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+  
+  .hero h1 {
+    margin: 20px 0 10px;
+  }
+  
+  .hero p {
+    margin-bottom: 20px;
+  }
+  
+  .hero .btn {
+    background: #fff;
+    color: #1C08F5;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .hero{
+    align-items: center;
+    width: 660px;
+    height: 200px;
+    background-color:rgb(70, 70, 238);
+  }
+  
+  .features, .how-it-works, .testimonials {
+    background: #e4e1e1;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .how-it-works{
+    background: #999595;
+  }
+  .testimonials{
+    background: #e4e1e1;
+  }
+  .features .cards, .steps, .quotes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .card, .step, blockquote {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .step small {
+    display: block;
+    margin-top: 10px;
+    color: #666;
+  }
+  
+  footer {
+    background: #0a0441;
+    color: #ccc;
+    padding: 40px 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .footer-links h4 {
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .social-icons a {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .m{
+    color: #136cf1;
+  }
   </style>
 </head>
 <body>
